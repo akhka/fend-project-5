@@ -46,3 +46,11 @@ app.post('/save', (req, res) => {
 
     res.status(200).send(savedTrip);
 });
+
+app.get('/test', function(req, res){
+    res.send('Test');
+});
+
+module.exports = {
+    app
+}

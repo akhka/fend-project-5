@@ -19,11 +19,20 @@ input {
     text-align: center;
 }
 
+input:hover{
+    border: 1px solid blue;
+}
+
 button {
     padding: 8px;
     font-weight: bold;
     width: 100%;
     text-align: center;
+}
+
+button:hover {
+    background-color: darkslategray;
+    color: white;
 }
 
 .container {
@@ -51,6 +60,8 @@ button {
 }
 
 
-@media only screen and (max-width:650px){
-    
+@media only screen and (max-width:700px){
+    input, button, p, label {
+        font-size: large;
+    }
 }
