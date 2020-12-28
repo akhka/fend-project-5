@@ -1,0 +1,23 @@
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: row;
+    background-color: slategrey;
+}
+
+header div {
+    float: left;
+}
+
+header div img {
+    width: 100px;
+    height: 100px;
+}
+
+header div h2 {
+    margin-left: 32px;
+    color: snow;
+    margin-top: auto;
+    margin-bottom: auto;
+}

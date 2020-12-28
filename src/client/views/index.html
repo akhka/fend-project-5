@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Travel App</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="https://png.pngtree.com/png-vector/20190130/ourlarge/pngtree-white-flying-airplane-cartoon-element-png-image_623905.jpg" alt="trip">
+        </div>
+        <div>
+            <h2>Travel App</h2>
+        </div>
+    </header>
+    
+    <div class="main">
+
+        <p>This is an application so you can plan for a trip, all you need to do is to choose a destination city, start date for the trip and end date, then submit.</p>
+
+        <section>
+            <div class="centering-container">
+                <img src="https://png.pngtree.com/png-clipart/20190511/ourlarge/pngtree-travel-the-world-monument-elements-png-image_1029122.jpg" alt="">
+            </div>
+            <div>
+                <div class="form-request">
+        
+                    <div>
+                        <label for="dep-to">Destination</label>
+                        <input type="text" name="dep-to" id="dep-to" placeholder="Insert destination city name.." required>
+                    </div>
+                    <div>
+                        <label for="start-date">Start date of trip</label>
+                        <input type="date" name="start-date" id="start-date" min="2021-01-01" required>
+                    </div>
+                    <div>
+                        <label for="end-date">End date of trip</label>
+                        <input type="date" name="end-date" id="end-date" min="2021-01-02" required>
+                    </div>
+                    <div class="container"><div class="center"><button id="submit-trip">Submit</button></div></div>
+                </div>
+            </div>
+        </section>
+
+        <h2 style="margin-left: 32px;" class="hide" id="title-result">You have planned for this trip:</h2>
+
+        <section class="hide" id="result-form">
+            
+            <div>
+                <form>
+        
+                    <div>
+                        <label for="result-city">The trip is to:</label>
+                        <h3 class="result-label" id="result-city"></h3>
+                    </div>
+                    <div>
+                        <label for="result-sdate">It starts on:</label>
+                        <h3 class="result-label" id="result-sdate"></h3>
+                    </div>
+                    <div>
+                        <label for="result-edate">and ends on:</label>
+                        <h3 class="result-label" id="result-edate"></h3>
+                    </div>
+                    <div>
+                        <label for="result-count-days">Trip will take (in days):</label>
+                        <h3 class="result-label" id="result-count-days"></h3>
+                    </div>
+                    <div>
+                        <label for="result-remainig-days">Trip will start in:</label>
+                        <h3 class="result-label" id="result-remainig-days"></h3>
+                    </div>
+                    <div>
+                        <label for="result-temp">Tempreture:</label>
+                        <h3 class="result-label" id="result-temp"></h3>
+                    </div>
+                    <div>
+                        <label for="result-weather">Weather:</label>
+                        <h3 class="result-label" id="result-weather"></h3>
+                    </div>
+                </form>
+            </div>
+
+            <div class="centering-container">
+                <img src="" alt="destination" id="result-image" >
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>Made By Mohammad Yar</p>
+    </footer>
+    
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+
+</body>
+
+</html>

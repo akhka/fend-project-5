@@ -1,0 +1,3 @@
+{
+    "baseUrl" : "http://api.geonames.org/searchJSON?maxRows=10&username=akhka&q="
+}
